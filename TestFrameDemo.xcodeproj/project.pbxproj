@@ -15,6 +15,10 @@
 		D518229321BA774F008DC22A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D518229221BA774F008DC22A /* main.m */; };
 		D518229D21BA774F008DC22A /* TestFrameDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D518229C21BA774F008DC22A /* TestFrameDemoTests.m */; };
 		D51822A821BA774F008DC22A /* TestFrameDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D51822A721BA774F008DC22A /* TestFrameDemoUITests.m */; };
+		D51822D521BAB859008DC22A /* demoframework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51822D221BAB803008DC22A /* demoframework.framework */; };
+		D51822D621BAB859008DC22A /* demoframework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D51822D221BAB803008DC22A /* demoframework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D5BCC08221BE615E0026B011 /* LocalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BCC08021BE615E0026B011 /* LocalViewController.m */; };
+		D5BCC08321BE615E0026B011 /* LocalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5BCC08121BE615E0026B011 /* LocalViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +36,42 @@
 			remoteGlobalIDString = D518227F21BA771C008DC22A;
 			remoteInfo = TestFrameDemo;
 		};
+		D51822D121BAB803008DC22A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D51822CC21BAB803008DC22A /* demoframework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D518225B21B933EB008DC22A;
+			remoteInfo = demoframework;
+		};
+		D51822D321BAB803008DC22A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D51822CC21BAB803008DC22A /* demoframework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D518226421B933EB008DC22A;
+			remoteInfo = demoframeworkTests;
+		};
+		D51822D721BAB859008DC22A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D51822CC21BAB803008DC22A /* demoframework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D518225A21B933EB008DC22A;
+			remoteInfo = demoframework;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D51822D921BAB85A008DC22A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D51822D621BAB859008DC22A /* demoframework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D518228021BA771D008DC22A /* TestFrameDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestFrameDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +90,10 @@
 		D51822A321BA774F008DC22A /* TestFrameDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestFrameDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D51822A721BA774F008DC22A /* TestFrameDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFrameDemoUITests.m; sourceTree = "<group>"; };
 		D51822A921BA774F008DC22A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D51822CC21BAB803008DC22A /* demoframework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = demoframework.xcodeproj; path = demoframework/demoframework.xcodeproj; sourceTree = "<group>"; };
+		D5BCC07F21BE615E0026B011 /* LocalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalViewController.h; sourceTree = "<group>"; };
+		D5BCC08021BE615E0026B011 /* LocalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalViewController.m; sourceTree = "<group>"; };
+		D5BCC08121BE615E0026B011 /* LocalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D51822D521BAB859008DC22A /* demoframework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +125,7 @@
 		D518227721BA771C008DC22A = {
 			isa = PBXGroup;
 			children = (
+				D51822CC21BAB803008DC22A /* demoframework.xcodeproj */,
 				D518228221BA771D008DC22A /* TestFrameDemo */,
 				D518229B21BA774F008DC22A /* TestFrameDemoTests */,
 				D51822A621BA774F008DC22A /* TestFrameDemoUITests */,
@@ -110,6 +155,9 @@
 				D518228E21BA774F008DC22A /* LaunchScreen.storyboard */,
 				D518229121BA774F008DC22A /* Info.plist */,
 				D518229221BA774F008DC22A /* main.m */,
+				D5BCC07F21BE615E0026B011 /* LocalViewController.h */,
+				D5BCC08021BE615E0026B011 /* LocalViewController.m */,
+				D5BCC08121BE615E0026B011 /* LocalViewController.xib */,
 			);
 			path = TestFrameDemo;
 			sourceTree = "<group>";
@@ -132,6 +180,15 @@
 			path = TestFrameDemoUITests;
 			sourceTree = "<group>";
 		};
+		D51822CD21BAB803008DC22A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D51822D221BAB803008DC22A /* demoframework.framework */,
+				D51822D421BAB803008DC22A /* demoframeworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,10 +199,12 @@
 				D518227C21BA771C008DC22A /* Sources */,
 				D518227D21BA771C008DC22A /* Frameworks */,
 				D518227E21BA771C008DC22A /* Resources */,
+				D51822D921BAB85A008DC22A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D51822D821BAB859008DC22A /* PBXTargetDependency */,
 			);
 			name = TestFrameDemo;
 			productName = TestFrameDemo;
@@ -221,6 +280,12 @@
 			mainGroup = D518227721BA771C008DC22A;
 			productRefGroup = D518228121BA771D008DC22A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D51822CD21BAB803008DC22A /* Products */;
+					ProjectRef = D51822CC21BAB803008DC22A /* demoframework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D518227F21BA771C008DC22A /* TestFrameDemo */,
@@ -230,6 +295,23 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		D51822D221BAB803008DC22A /* demoframework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = demoframework.framework;
+			remoteRef = D51822D121BAB803008DC22A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D51822D421BAB803008DC22A /* demoframeworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = demoframeworkTests.xctest;
+			remoteRef = D51822D321BAB803008DC22A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		D518227E21BA771C008DC22A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -237,6 +319,7 @@
 			files = (
 				D518229021BA774F008DC22A /* LaunchScreen.storyboard in Resources */,
 				D518228D21BA774F008DC22A /* Assets.xcassets in Resources */,
+				D5BCC08321BE615E0026B011 /* LocalViewController.xib in Resources */,
 				D518228B21BA771D008DC22A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +347,7 @@
 			files = (
 				D518228821BA771D008DC22A /* ViewController.m in Sources */,
 				D518229321BA774F008DC22A /* main.m in Sources */,
+				D5BCC08221BE615E0026B011 /* LocalViewController.m in Sources */,
 				D518228521BA771D008DC22A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +380,11 @@
 			isa = PBXTargetDependency;
 			target = D518227F21BA771C008DC22A /* TestFrameDemo */;
 			targetProxy = D51822A421BA774F008DC22A /* PBXContainerItemProxy */;
+		};
+		D51822D821BAB859008DC22A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = demoframework;
+			targetProxy = D51822D721BAB859008DC22A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -434,6 +523,7 @@
 		D51822AD21BA7750008DC22A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D2EWB8EXPP;
@@ -451,6 +541,7 @@
 		D51822AE21BA7750008DC22A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D2EWB8EXPP;
