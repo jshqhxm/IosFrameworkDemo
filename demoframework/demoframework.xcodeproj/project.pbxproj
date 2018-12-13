@@ -11,6 +11,10 @@
 		D518226A21B933EB008DC22A /* demoframeworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D518226921B933EB008DC22A /* demoframeworkTests.swift */; };
 		D518226C21B933EB008DC22A /* demoframework.h in Headers */ = {isa = PBXBuildFile; fileRef = D518225E21B933EB008DC22A /* demoframework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D518227621B93855008DC22A /* sayHello.swift in Sources */ = {isa = PBXBuildFile; fileRef = D518227521B93855008DC22A /* sayHello.swift */; };
+		D5F2D4DC21BF8572006A0032 /* FrameworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F2D4DA21BF8572006A0032 /* FrameworkViewController.swift */; };
+		D5F2D4DD21BF8572006A0032 /* FrameworkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5F2D4DB21BF8572006A0032 /* FrameworkViewController.xib */; };
+		D5F2D51D21C1F9F8006A0032 /* framework.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5F2D51C21C1F9F8006A0032 /* framework.storyboard */; };
+		D5F2D52121C1FFC2006A0032 /* FrameMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F2D52021C1FFC2006A0032 /* FrameMainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +35,10 @@
 		D518226921B933EB008DC22A /* demoframeworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demoframeworkTests.swift; sourceTree = "<group>"; };
 		D518226B21B933EB008DC22A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D518227521B93855008DC22A /* sayHello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sayHello.swift; sourceTree = "<group>"; };
+		D5F2D4DA21BF8572006A0032 /* FrameworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkViewController.swift; sourceTree = "<group>"; };
+		D5F2D4DB21BF8572006A0032 /* FrameworkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FrameworkViewController.xib; sourceTree = "<group>"; };
+		D5F2D51C21C1F9F8006A0032 /* framework.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = framework.storyboard; sourceTree = "<group>"; };
+		D5F2D52021C1FFC2006A0032 /* FrameMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameMainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +81,13 @@
 		D518225D21B933EB008DC22A /* demoframework */ = {
 			isa = PBXGroup;
 			children = (
+				D5F2D4DA21BF8572006A0032 /* FrameworkViewController.swift */,
+				D5F2D4DB21BF8572006A0032 /* FrameworkViewController.xib */,
 				D518225E21B933EB008DC22A /* demoframework.h */,
 				D518225F21B933EB008DC22A /* Info.plist */,
 				D518227521B93855008DC22A /* sayHello.swift */,
+				D5F2D51C21C1F9F8006A0032 /* framework.storyboard */,
+				D5F2D52021C1FFC2006A0032 /* FrameMainViewController.swift */,
 			);
 			path = demoframework;
 			sourceTree = "<group>";
@@ -181,6 +193,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5F2D4DD21BF8572006A0032 /* FrameworkViewController.xib in Resources */,
+				D5F2D51D21C1F9F8006A0032 /* framework.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +213,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D518227621B93855008DC22A /* sayHello.swift in Sources */,
+				D5F2D52121C1FFC2006A0032 /* FrameMainViewController.swift in Sources */,
+				D5F2D4DC21BF8572006A0032 /* FrameworkViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +372,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = demoframework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -384,7 +400,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = demoframework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

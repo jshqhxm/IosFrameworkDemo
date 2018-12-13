@@ -7,16 +7,26 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
 @end
+
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+//    //不加上下面三行代码 UINavigationController 会为空
+//    UINavigationController *nvc = [[ UINavigationController alloc]initWithRootViewController:[ViewController new]];
+//    self.window.rootViewController = nvc;
+//    [self.window makeKeyAndVisible];
+    
+    
+    
     return YES;
 }
 

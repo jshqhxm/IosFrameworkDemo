@@ -24,6 +24,21 @@
     NSLog(@"LocalViewController    viewDidLoad");
 }
 
+-(void) viewDidAppear:(BOOL)animated {
+    NSLog(@"LocalViewController    viewDidAppear  %d", animated);
+}
+
+-(void) viewWillDisappear:(BOOL)animated {
+    NSLog(@"LocalViewController    viewWillDisappear   %d" , animated);
+}
+
+-(id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    NSLog(@"LocalViewController    initWithNibName   %@" , nibNameOrNil);
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+
+    return self;
+}
+
 /*
 #pragma mark - Navigation
 
