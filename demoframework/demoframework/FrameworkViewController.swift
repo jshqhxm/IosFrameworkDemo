@@ -11,6 +11,12 @@ import UIKit
 open class FrameworkViewController: UIViewController {
 
     @IBOutlet weak var CloseBtn: UIButton!
+    
+    @IBAction func clicked(_ sender: Any) {
+        print("FrameworkViewController   CloseBtn clicked ")
+        self.dismiss(animated: true, completion: nil)
+        
+    }
     override open func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,7 +24,8 @@ open class FrameworkViewController: UIViewController {
         print("FrameworkViewController   viewDidLoad")
     }
 
-
+   
+    
     override open func viewDidAppear(_ animated: Bool) {
         print("FrameworkViewController   viewDidAppear     " )
     }

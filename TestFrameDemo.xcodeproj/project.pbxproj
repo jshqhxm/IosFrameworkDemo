@@ -15,11 +15,11 @@
 		D518229321BA774F008DC22A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D518229221BA774F008DC22A /* main.m */; };
 		D518229D21BA774F008DC22A /* TestFrameDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D518229C21BA774F008DC22A /* TestFrameDemoTests.m */; };
 		D51822A821BA774F008DC22A /* TestFrameDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D51822A721BA774F008DC22A /* TestFrameDemoUITests.m */; };
-		D51822D521BAB859008DC22A /* demoframework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51822D221BAB803008DC22A /* demoframework.framework */; };
-		D51822D621BAB859008DC22A /* demoframework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D51822D221BAB803008DC22A /* demoframework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D5AFA5BC21E58D0300B34E2A /* demoframework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5AFA5B921E58D0300B34E2A /* demoframework.framework */; };
+		D5AFA5BD21E5903F00B34E2A /* demoframework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D51822D221BAB803008DC22A /* demoframework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D5AFA5BE21E5910D00B34E2A /* demoframework.framework in Resources */ = {isa = PBXBuildFile; fileRef = D5AFA5B921E58D0300B34E2A /* demoframework.framework */; };
 		D5BCC08221BE615E0026B011 /* LocalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BCC08021BE615E0026B011 /* LocalViewController.m */; };
 		D5BCC08321BE615E0026B011 /* LocalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5BCC08121BE615E0026B011 /* LocalViewController.xib */; };
-		D5F2D52F21C2072B006A0032 /* demoframework.framework in Resources */ = {isa = PBXBuildFile; fileRef = D5F2D52E21C2072B006A0032 /* demoframework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +60,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D51822D621BAB859008DC22A /* demoframework.framework in Embed Frameworks */,
+				D5AFA5BD21E5903F00B34E2A /* demoframework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,10 +85,10 @@
 		D51822A721BA774F008DC22A /* TestFrameDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFrameDemoUITests.m; sourceTree = "<group>"; };
 		D51822A921BA774F008DC22A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D51822CC21BAB803008DC22A /* demoframework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = demoframework.xcodeproj; path = demoframework/demoframework.xcodeproj; sourceTree = "<group>"; };
+		D5AFA5B921E58D0300B34E2A /* demoframework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = demoframework.framework; path = "../../Library/Developer/Xcode/DerivedData/TestFrameDemo-bcyviwciqnnyvdbvwpyxsklvphkp/Build/Products/Debug-iphonesimulator/demoframework.framework"; sourceTree = "<group>"; };
 		D5BCC07F21BE615E0026B011 /* LocalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalViewController.h; sourceTree = "<group>"; };
 		D5BCC08021BE615E0026B011 /* LocalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalViewController.m; sourceTree = "<group>"; };
 		D5BCC08121BE615E0026B011 /* LocalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalViewController.xib; sourceTree = "<group>"; };
-		D5F2D52E21C2072B006A0032 /* demoframework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = demoframework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D51822D521BAB859008DC22A /* demoframework.framework in Frameworks */,
+				D5AFA5BC21E58D0300B34E2A /* demoframework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +120,7 @@
 		D518227721BA771C008DC22A = {
 			isa = PBXGroup;
 			children = (
-				D5F2D52E21C2072B006A0032 /* demoframework.framework */,
+				D5AFA5B921E58D0300B34E2A /* demoframework.framework */,
 				D51822CC21BAB803008DC22A /* demoframework.xcodeproj */,
 				D518228221BA771D008DC22A /* TestFrameDemo */,
 				D518229B21BA774F008DC22A /* TestFrameDemoTests */,
@@ -312,11 +312,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5AFA5BE21E5910D00B34E2A /* demoframework.framework in Resources */,
 				D518229021BA774F008DC22A /* LaunchScreen.storyboard in Resources */,
 				D518228D21BA774F008DC22A /* Assets.xcassets in Resources */,
 				D5BCC08321BE615E0026B011 /* LocalViewController.xib in Resources */,
 				D518228B21BA771D008DC22A /* Main.storyboard in Resources */,
-				D5F2D52F21C2072B006A0032 /* demoframework.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
